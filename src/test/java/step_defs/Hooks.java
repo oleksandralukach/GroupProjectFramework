@@ -32,11 +32,15 @@ public class Hooks {
         // I can attach a screenshot to a failing scenario
         try {
             if (scenario.isFailed()) {
-                //we will take a screenshot
-                final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-                //add screenshot to html report
-                Thread.sleep(3000);
-                scenario.attach(screenshot, "image/png", "My screenshot");
+                TakesScreenshot screenshot = (TakesScreenshot) Driver.getDriver();
+                File file = screenshot.getScreenshotAs(OutputType.FILE);
+                FileUtils.copyFile(file, new File("./failed_tests/screenshot.png"));
+
+//                //we will take a screenshot
+//                final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+//                //add screenshot to html report
+//                Thread.sleep(3000);
+//                scenario.attach(screenshot, "image/png", "My screenshot");
 
             }
         } catch (Exception e) {

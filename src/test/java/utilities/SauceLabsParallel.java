@@ -25,18 +25,18 @@ public class SauceLabsParallel {
     private String version;
     private String os;
 
+    //when we are trying to run a test in a parallel we need to make sure
+    //we set up our driver to be thread local(do not interfere with each other)
+    //Thread - line of execution / 1 test = 1 thread
+    private ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    //when we are running in parallel we need to keep track of sessions
+    private ThreadLocal<String> sessionId = new ThreadLocal<>();
+
     public SauceLabsParallel(String browser,String version, String os){
         this.browser = browser;
         this.version = version;
         this.os = os;
     }
-    //when we are trying to run a test in a parallel we need to make sure
-    //we set up our driver to be thread local(do not interfere with each other)
-    //Thread - line of execution / 1 test = 1 thread
-
-    private ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    //when we are running in parallel we need to keep track of sessions
-    private ThreadLocal<String> sessionId = new ThreadLocal<>();
 
     private WebDriver createDriver(String browser, String version, String os) throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
