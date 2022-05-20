@@ -29,13 +29,13 @@ public class Hooks {
 
     @After
     public void tearDown(Scenario scenario) {
-        // I can attach a screenshot to a failing scenario
         try {
             if (scenario.isFailed()) {
                 TakesScreenshot screenshot = (TakesScreenshot) Driver.getDriver();
                 File file = screenshot.getScreenshotAs(OutputType.FILE);
                 FileUtils.copyFile(file, new File("./failed_tests/screenshot.png"));
 
+                // I can attach a screenshot to a failing scenario
 //                //we will take a screenshot
 //                final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
 //                //add screenshot to html report
