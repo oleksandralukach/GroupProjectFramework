@@ -1,10 +1,13 @@
-package utilities;
+package utilities.drivers;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import utilities.ConfigReader;
+import utilities.SaucelabsDriver;
+import utilities.drivers.ChromeWebDriver;
 
 import java.time.Duration;
 
@@ -26,9 +29,11 @@ public class Driver {
                     driver = ChromeWebDriver.loadChromeWebDriver();
                     break;
                 case "firefox":
+                    WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
                     break;
                 case "safari":
+                    //Safari browser comes with the driver integrated.
                     driver = new SafariDriver();
                     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
                     driver.manage().window().maximize();

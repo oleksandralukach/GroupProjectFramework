@@ -14,7 +14,8 @@ public class DBUtilV2 {
 
     public static void openDBConnection() {
 
-        openDBConnection(""); // and by default (because database name is empty now) will open the one we provide in query with .tableName
+        openDBConnection("");
+        // and by default (because database name is empty now) will open the one we provide in query with .tableName
     }
     public static void openDBConnection(String database) {
         try {
@@ -39,7 +40,7 @@ public class DBUtilV2 {
             Assert.fail("Can't close connection to DB");
         }
     }
-
+//vargs for parametrization
     public static boolean executeStatement(String sqlStatement, Object...params){ //insert, delete, update
         if (connection == null)openDBConnection();
         try{
@@ -79,7 +80,9 @@ public class DBUtilV2 {
     }
 
     //Parametrized query
-    //VarArgs.This argument that can accept variable number of values is called varargs. [array]You can provide here as many objects as you need or none.The second String will be considered as an array of 1 element.
+    //VarArgs.This argument that can accept variable number of values is called varargs. [array]
+    // You can provide here as many objects as you need or none.
+    // The second String will be considered as an array of 1 element.
     // if I provide 3 Strings: first will be considered as query, second and third as array of 2 elements
     //["String"]
     //["String1", "String2"]]
@@ -109,7 +112,6 @@ public class DBUtilV2 {
     public static ResultSetHandler query(String query, Object... params) {
         return new ResultSetHandler(queryToRs(query, params)); //new object of class based on constructor
     }
-
 
     public static void main(String[] args) {
 

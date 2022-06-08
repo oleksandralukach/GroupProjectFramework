@@ -9,6 +9,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 //POJO(bean) class- only fields and their getter and setter
+//bean encapsulates many objects into one object so that we can access this object from multiple places.
 @Data
 public class UserProfile {
     private int id;

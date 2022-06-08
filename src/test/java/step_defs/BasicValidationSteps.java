@@ -2,19 +2,11 @@ package step_defs;
 
 import dbModels.UserProfile;
 
-import io.cucumber.java.Scenario;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.junit.Test;
 import org.openqa.selenium.*;
-import utilities.Driver;
-import utilities.EnvironmentManager;
-import utilities.database.DBUtilV2;
-
-import java.util.List;
-import java.util.Locale;
+import utilities.drivers.Driver;
 
 public class BasicValidationSteps {
 
