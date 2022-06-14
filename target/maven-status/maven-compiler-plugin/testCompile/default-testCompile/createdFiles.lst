@@ -7,8 +7,8 @@ runners\RegressionRunner.class
 utilities\database\ResultSetHandler.class
 dbModels\Transaction.class
 pages\MainPage.class
+step_defs\Parallel.class
 sshcConnection\LocalSession.class
-utilities\ChromeWebDriver.class
 utilities\Helper.class
 utilities\SauceLabsParallel.class
 runners\AmazonTest.class
@@ -16,7 +16,6 @@ utilities\database\DBTest.class
 step_defs\Hooks.class
 step_defs\BasicValidationSteps.class
 sshcConnection\Test.class
-utilities\Driver.class
 runners\SmokeRunner.class
 utilities\EnvironmentManager.class
 utilities\ConfigReader.class

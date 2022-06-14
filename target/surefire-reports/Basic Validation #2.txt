@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: runners.SmokeRunner
+Test set: Basic Validation #2
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.88 s - in runners.SmokeRunner
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.263 s - in Basic Validation #2

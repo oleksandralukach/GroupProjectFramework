@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--log4j library looks for this file when you start the program-->
+<!--This file has all custom configuration of logging for this app-->
+
+<Configuration status="DEBUG">
+<!--    Appenders (message writer types) are types of logging-->
+<!--    There are print out i console appender-->
+<!--    you can choose to write all the logs to a file-->
+
+    <Appenders>
+<!--    if you want your logs to go to console use console appender -->
+    <Console name="ABC" target="SYSTEM_OUT">
+    </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root level="DEBUG">
+                <AppenderRef ref="ABC"/>
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,7 +1,11 @@
 package step_defs;
 
+import org.junit.Test;
+
 public class ToTestCommandPrompt {
-    public static void main(String[] args) {
+
+    @Test
+    public void parallelTest() {
         System.out.println("Hello World");
     }
 }
