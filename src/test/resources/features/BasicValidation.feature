@@ -8,7 +8,7 @@ Feature: Basic Validation
   Examples:
     | searchItem | resultItem|
     | apple | apple          |
-    | cat | cat              |
+    | cat | dog              |
 
   @Smoke
   Scenario: Google title verification 2

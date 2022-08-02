@@ -19,7 +19,6 @@ public class Helper {
         //then click with Actions class
         Actions actions = new Actions(Driver.getDriver());
         actions.click(element).perform();
-
     }
 
     //javascript click

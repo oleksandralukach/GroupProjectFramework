@@ -9,6 +9,8 @@ C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\
 C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\sshcConnection\LocalSession.java
 C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\utilities\drivers\ChromeWebDriver.java
 C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\sshcConnection\SSHSession.java
+C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\utilities\Files.java
+C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\step_defs\CalendarClass.java
 C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\utilities\ConfigReader.java
 C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\utilities\EnvironmentManager.java
 C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\runners\RegressionRunner.java
@@ -17,7 +19,10 @@ C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\
 C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\step_defs\ToTestCommandPrompt.java
 C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\dbModels\UserProfile.java
 C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\utilities\drivers\Driver.java
+C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\log4jdemo\Log4jDemo.java
 C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\utilities\SauceLabsParallel.java
+C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\runners\PrameterizedTestRunner.java
+C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\runners\ArithmeticTest.java
 C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\utilities\database\DBTest.java
 C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\step_defs\Hooks.java
 C:\Users\Oleksanda\Desktop\DevxRemoteServer\GroupProjectFramework\src\test\java\utilities\database\ResultSetHandler.java

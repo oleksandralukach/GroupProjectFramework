@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--log4j library looks for this file when you start the program-->
+<!--This file has all custom configuration of logging for this app-->
+
+<Configuration status="INFO">
+<!--    library level of logger can be changed to DEBUG/WARN/ERROR-->
+<!--    Appenders (message writer types) are types of logging-->
+<!--    There are print out i console appender-->
+<!--    you can choose to write all the logs to a file-->
+
+    <Appenders>
+<!--    if you want your logs to go to console use console appender -->
+    <Console name="ABC" target="SYSTEM_OUT">
+        <PatternLayout pattern=" [%level] %d{yyyy-MM-dd HH:mm:ss.SS} - %msg -[%class] -%l %n"/>
+    </Console>
+        <File name="DevXSchool" fileName ="logs/groupProject${date:yyyy-MM-dd-HH-mm}.log" append="false"> <!--append="true" -->
+            <PatternLayout pattern = "[%level] %d{yyyy-MM-dd HH:mm:ss.SS} - %msg -[%class] -%l %n">
+            </PatternLayout>
+        </File>
+    </Appenders>
+
+<!--    define loggers here-->
+<!--    status DEBUG means I want to see everything under (info, warn, error, fatal-->
+    <Loggers>
+        <Root level="DEBUG">
+<!--            for console print out-->
+                <AppenderRef ref="ABC"/>
+<!--            for file-->
+                <AppenderRef ref="DevXSchool"/>
+        </Root>
+    </Loggers>
+</Configuration>

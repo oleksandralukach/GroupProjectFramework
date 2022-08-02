@@ -53,7 +53,7 @@ public class SauceLabsParallel {
     }
     //now we need to store all the configurations for the browser that will be using
     //data provider for previous method
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "browser, version, os data")
     public static Collection sauceLabDataProvider(){
         return Arrays.asList(new Object[][]{
                 {"chrome", "latest","windows 10"},
@@ -68,7 +68,7 @@ public class SauceLabsParallel {
 //        WebDriver driver = createDriver(browser,version, os);
 //        System.out.println(Thread.currentThread().getId());
 //        driver.navigate().to("https://demoqa.com/alerts");
-//
+
 //        JavascriptExecutor js = (JavascriptExecutor)driver;
 //        js.executeScript("window.scrollBy(0,500)");
 //        driver.findElement(By.id("promtButton")).click();

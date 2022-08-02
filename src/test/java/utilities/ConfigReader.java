@@ -12,7 +12,7 @@ public class ConfigReader {
     public static Properties properties;
 
     static { //static block runs before anything else (can be used for static initialization of a class)
-             //static block executes automatically when the class is loaded in memory
+             //static block executes automatically when the class is loaded in memory (no need of main method)
         String path = "src/test/resources/config.properties";
         try {
             FileInputStream file = new FileInputStream(path);

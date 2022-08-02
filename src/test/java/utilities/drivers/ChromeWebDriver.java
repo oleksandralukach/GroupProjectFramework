@@ -12,6 +12,7 @@ public class ChromeWebDriver {
 
     public static WebDriver loadChromeWebDriver(){
         WebDriverManager.chromedriver().setup();
+        //WebDriverManager.chromedriver().driverVersion("103.0.4183.38").setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
         options.addArguments("--disable-extensions");
